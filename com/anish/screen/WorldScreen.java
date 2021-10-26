@@ -103,10 +103,9 @@ public class WorldScreen implements Screen, SomeConstants {
                     });
                 newThread.start();
         }
-        if(guy.getX()==END_X && guy.getY() == END_Y) {
-            world.delete(guy.getX(),guy.getY());;
+        if(guy.getX() == END_X && guy.getY() == END_Y) {
+            world.delete(guy.getX(),guy.getY());
         }
-
         return this;
     }
 
